@@ -1,0 +1,93 @@
+.flex-1 {
+  flex: 1;
+}
+nav{
+    z-index: 5;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.city-hero {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.city-hero__image {
+    position: absolute;
+    display: inline-block;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+.city-hero__container {
+    position: relative;
+    max-width: 1170px;
+    padding: 70px 20px 12px;
+    text-align: center;
+}
+.city-hero__image-shadow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), transparent);
+}
+.no-padding {
+	padding: 0px;
+
+}
+.hidden{
+	visibility: hidden;
+}
+h1, h3 {
+	color: #FFFFFF;
+	text-align: center;
+}
+h1 {
+	font-size: 90px;
+}
+
+
+
+.h3_new {
+	padding: 0.55rem;
+	margin-bottom: 0rem;
+}
+.title_bg {
+  background-color: #2B3035;
+}		
+section{
+	min-height: 50vh;
+	padding: 25px;
+	background-color: whitesmoke;
+}
+#map{
+	height: 350px;
+}
+.img-circular{
+	border-radius: 50%;
+	width: 450px;
+	height: 300px;
+}
+.img-circular:hover{
+	box-shadow: 10%;
+}
+.centrarContenido{
+	display: flex;
+	margin: auto;
+}
+footer{
+	background-color: rgba(0, 0, 0, .05);
+}
+footer a{
+	color: #000;
+}
+.text-link{
+	color: #990000;
+}
+#main-nav{
+	background-color: rgba(0, 0, 0, .05);
+}
