@@ -1,25 +1,28 @@
-$(function(){
+
+
     let ida = $("#inputIda");
-    let idaVuelta = $("#inputIdaVuelta");
     let divRegreso = $("#divRegreso");
     let fechaSalida = $("#fechaSalida");
     let fechaRegreso = $("#fechaRegreso");
 
     // Seleccion tipo de viaje
     ida.attr("checked", "checked");
-    fechaRegreso.attr("disabled", true);
-    divRegreso.css("display", "none");
+    deshabilitarRegreso();
 
+    function deshabilitarRegreso(){
+        fechaRegreso.attr("disabled", true);
+        fechaRegreso.css("color", "#ccc");
+        fechaRegreso.css("cursor", "inherit");
+    }
+    function habilitarRegreso(){
+        fechaRegreso.attr("disabled", false);
+        fechaRegreso.css("color", "#000");
+        fechaRegreso.css("cursor", "pointer");
+    }
+    
     $("input[type='radio']").click(function(){
         var radioValue = $("input[name='recorrido']:checked").val();
-        if(radioValue == 1){
-            fechaRegreso.attr("disabled", true);
-            divRegreso.css("display", "none");
-        }
-        else{
-            fechaRegreso.attr("disabled", false);
-            divRegreso.css("display", "block");
-        }
+        (radioValue == 1) ? deshabilitarRegreso() : habilitarRegreso();
     });
 
     let destinos = ["Retiro", "Rosario", "Mendoza", "Salta", "Villa General Belgrano", "Iguazú"];
@@ -66,27 +69,25 @@ $(function(){
         return yyyy + "-" + mm + "-" + dd;
     }
 
+    // Agregar-restar pasajeros
+    let sumar = $("#sumarPax");
+    let restar = $("#restarPax");
+    let divCantidad = $("#cantPax");
 
-    let viajes = {
-        asientos : {
-            ejecutivo: {
-                asientos: 6,
-                ubicaciones: ["1V", "2P", "3V", "4V", "5P", "6V"],
-                precio: 3500,
-                premium: true
-            },
-            cama: {
-                asientos: 6,
-                ubicaciones: [1, 2, 3, 4, 5, 6],
-                precio: 3500,
-                premium: true
-            },
-            semicama: {
-                asientos: 6,
-                ubicaciones: [1, 2, 3, 4, 5, 6],
-                precio: 3500,
-                premium: true
-            }
-        }
-    }
-});
+    cantidad = 0
+    divCantidad.html(cantidad + "");
+    sumar.click(function(){
+        if(cantidad < 5)
+            cantidad++;
+
+        divCantidad.html(cantidad + "");
+    });
+    restar.click(function(){
+        if(cantidad > 0)
+            cantidad--;
+
+        divCantidad.html(cantidad + "");
+    });
+
+
+    
