@@ -6,6 +6,10 @@
 }
 nav {
   z-index: 5;
+  background-color: #eee;
+  border-bottom: 1px solid #00759c;
+  color: #000;
+  font-weight: bold;
 }
 img {
   overflow-clip-margin: content-box;
@@ -31,6 +35,7 @@ img {
   max-width: 1170px;
   padding: 70px 20px 12px;
   text-align: center;
+  bottom: 100px;
 }
 .city-hero__image-shadow {
   position: absolute;
@@ -80,12 +85,7 @@ section {
   display: flex;
   margin: auto;
 }
-footer {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-footer a {
-  color: #000;
-}
+
 .text-link {
   color: #990000;
 }
@@ -117,4 +117,14 @@ footer a {
 input[name='ciudad']{
     border: none;
     font-size: 14px;
+}
+
+.bus-buscador-section{
+    position: relative;
+    bottom: 100px;
+}
+
+.trips{
+  position: relative;
+  top: -70px;
 }
