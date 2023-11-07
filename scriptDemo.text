@@ -1,0 +1,52 @@
+# Pasos para la demo del prototipo
+
+1. Vista principal
+1.1 Mostrar atributo de calidad: usabilidad
+1.1.1 Botones
+1.1.2 Logo / Favicon
+1.1.3 Colores
+1.1.4 Checkbox ida / ida y vuelta
+1.1.5 Fechas desde el día actual
+1.1.6 Fechas hasta 6 meses desde la fecha actual
+
+2. Presionar botón ACCEDER para mostrar Login
+3. Presionar botón REGISTRARSE para mostrar Registro
+
+4. Presionar TAGS para volver a inicio
+
+5. Buscador
+5.1 Mostrar errores
+5.1.1 Dejar vacío ORIGEN o DESTINO
+5.1.2 Repetir "Retiro" en ORIGEN y DESTINO
+5.1.3 Dejar en 0 PASAJEROS
+5.1.4 Completar "Retiro" en ORIGEN y "Mendoza" en DESTINO, 11 de nov, con 1 PASAJERO
+
+5.2 Mostrar IDA 
+5.2.1 Presionar TAGS
+5.2.2 "Retiro" en ORIGEN y "Salta" en DESTINO, 11 de nov, con 1 PASAJERO
+5.2.3 Mostrar tag PREMIUM
+
+5.3 Mostrar IDA y VUELTA
+5.3.1 Presionar TAGS
+5.3.2 Seleccionar ida y vuelta
+5.3.3 "Retiro" en ORIGEN y "Salta" en DESTINO, SALIDA 11 de nov, REGRESO 24 nov, con 1 PASAJERO
+
+6 Mostrar Datos PASAJEROS
+6.1 Presionar TAGS
+6.2 "Retiro" en ORIGEN y "Rosario" en DESTINO, 10 de nov, con 4 PASAJEROS
+6.3 Presionar COMPRAR en primera opción
+
+7 Mostrar DESCUENTOS
+7.1 CLick en certificado de discapacidad -> Descuento Pasajero discapacitado
+7.2 Click en pantalla -> Descuento Pasajero 1 menor hasta 5 años
+7.3 Click en pantalla -> Descuento Pasajero 2 jubilado
+
+8 Mostrar SELECCIÓN DE ASIENTOS
+8.1 CLick en pantalla -> Vista asientos general
+8.2 Click en 2P -> Seleccion primer asiento
+8.3 Click en 1V -> Seleccion segundo asiento
+8.4 Click en 6V -> Seleccion tercer asiento
+8.5 Click en 9V -> Seleccion cuarto asiento
+
+
+

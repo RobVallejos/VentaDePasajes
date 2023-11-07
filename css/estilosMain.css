@@ -128,3 +128,12 @@ input[name='ciudad']{
   position: relative;
   top: -70px;
 }
+.text-left{
+  text-align: left;
+}
+.text-rigth{
+  text-align: right;
+}
+table tbody td{
+  font-weight: 600;
+}

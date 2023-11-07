@@ -1,0 +1,10 @@
+section{
+    min-height: 25vh;
+    bottom: 25px;
+    padding: 0;
+}
+
+.city-hero__container {
+    bottom: 100px;
+    opacity: 0;
+}
