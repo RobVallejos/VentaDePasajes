@@ -104,5 +104,41 @@
         divCantidad.html(cantidad + "");
     });
 
+// Cambio de idioma
 
-    
+let spanish = $("#idiomaEs");
+let english = $("#idiomaEn");
+let portuguese = $("#idiomaPt");
+let acceder = $("#acceder");
+let tituloPagina = $("#tituloPagina");
+let bienvenido = $("#bienvenido");
+let excursiones = $("#excursiones");
+let promociones = $("#promociones");
+let asistencia = $("#asistencia");
+
+spanish.click(function(){
+    acceder.html("Acceder");
+    tituloPagina.html("Transporte Automotor General Sarmiento");
+    bienvenido.html("Bienvenido");
+    excursiones.html("Excursiones");
+    promociones.html("Promociones");
+    asistencia.html("Asistencia al viajero");
+});
+   
+english.click(function(){
+    acceder.html("Login")
+    tituloPagina.html("General Sarmiento Automotive Transport");
+    bienvenido.html("Welcome");
+    excursiones.html("Excursions");
+    promociones.html("Offers");
+    asistencia.html("Traveler assistance");
+});
+
+portuguese.click(function(){
+    acceder.html("Accesar")
+    tituloPagina.html("General Sarmiento Transporte Automotivo");
+    bienvenido.html("Seja bem-vindo");
+    excursiones.html("Excursões");
+    promociones.html("Promoções");
+    asistencia.html("Assistência ao viajante");
+});
