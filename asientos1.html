@@ -41,10 +41,36 @@
                 </a>
             </div>
         </nav>
-        <div>
-            <a href="asientos1.html" target="_blank">
-            <img src="img/CompraPaso4.jpg" alt="">
+        <div class="text-center" style="position: relative;">
+            <a id="selectAsiento">
+            <img id="imagenFondo" src="img/Asientos1.jpg" width="65%" alt="">
             </a>
+            <div style="position: absolute; bottom:170px; right: 330px;">
+                <table class="text-left" cellpadding="3">
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>María Pérez</td>
+                            <td id="maria" style="color:#fff" class="text-right">&nbsp2P</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Carlos García</td>
+                            <td id="carlos" style="color:#fff" class="text-right">&nbsp1V</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Felipe Pérez García</td>
+                            <td id="felipe" style="color:#fff" class="text-right">&nbsp6V</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Juana Pérez García</td>
+                            <td id="juana" style="color:#fff" class="text-right">&nbsp9V</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <!-- Footer -->
         <footer
@@ -93,5 +119,52 @@
         <script type="text/javascript" src="js/buscador.js"></script>
         <script type="text/javascript" src="js/resultados.js"></script>
         <script type="text/javascript" src="js/logueado.js"></script>
+        <script>
+            $(function(){
+                let selectorAsiento = $("#selectAsiento")
+                let maria = $("#maria")
+                let carlos = $("#carlos")
+                let felipe = $("#felipe")
+                let juana = $("#juana")
+                let imagen = $("#imagenFondo") 
+
+                maria.css("color", "#fff");
+                carlos.css("color", "#fff");
+                felipe.css("color", "#fff");
+                juana.css("color", "#fff");
+
+                var cont = 0;
+                selectorAsiento.click(function(){
+                    if(cont == 0){
+                        imagen.attr("src", "img/Asientos2.jpg")
+                        maria.html("&nbsp2P");
+                        maria.css("color", "#00759c");
+                        cont++
+                    }
+                    else if(cont == 1){
+                        imagen.attr("src", "img/Asientos3.jpg")
+                        maria.css("color", "#000");
+                        carlos.html("&nbsp1V");
+                        carlos.css("color", "#00759c");
+                        cont++
+                    }
+                    else if(cont == 2){
+                        imagen.attr("src", "img/Asientos4.jpg")
+                        carlos.css("color", "#000");
+                        felipe.html("&nbsp6V");
+                        felipe.css("color", "#00759c");
+                        cont++
+                    }
+                    else if(cont == 3){
+                        imagen.attr("src", "img/Asientos5.jpg")
+                        felipe.css("color", "#000");
+                        juana.html("&nbsp9V");
+                        juana.css("color", "#00759c");
+                        cont++
+                    }
+
+                })
+            });
+        </script>
     </body>
 </html>

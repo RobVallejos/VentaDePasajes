@@ -171,7 +171,7 @@ dl, ol, ul {
 }
 .trips ul.servicios li {
     animation-duration: 1s;
-    padding: 2px;
+    padding: 15px 2px 10px 2px;
     margin: 10px 0px 0px 0px;
     background-color: #fff;
     margin-bottom: 1em;
@@ -184,7 +184,7 @@ li {
     text-align: left;
 }
 li.trip-card{
-    width: 940px;;
+    width: 940px;
 }
 .rowR:not(.expanded) .rowR {
     max-width: none;
@@ -478,6 +478,7 @@ option {
 {
     .trip-card .trip-card__footer {
         border-top: 1px solid #ddd;
+        padding-top: 5px;
     }
     .currency, .price, .price-sig {
         color: #063372;

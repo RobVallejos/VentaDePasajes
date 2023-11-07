@@ -1,4 +1,4 @@
-$(function(){
+$(function(){   
     let cuit = $("#cuitForm");
     let companieName = $("#comNameForm");
 
@@ -17,9 +17,8 @@ $(function(){
         }
     });
 
-    document.getElementById("btnIngresar").onclick = function irAlIndex(){
+    document.getElementById("btnIngresar").onclick = function(){
         location.href = "index.html";
-        return;
     } 
 
 });

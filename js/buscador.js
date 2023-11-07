@@ -4,6 +4,7 @@
     let divRegreso = $("#divRegreso");
     let fechaSalida = $("#fechaSalida");
     let fechaRegreso = $("#fechaRegreso");
+    let swapTrip = $("#swapTrip");
 
     // Seleccion tipo de viaje
     ida.attr("checked", "checked");
@@ -28,7 +29,18 @@
     let destinos = ["Retiro", "Rosario", "Mendoza", "Salta", "Villa General Belgrano", "Iguazú"];
 
     $( "input[name='ciudad']" ).autocomplete({
-        source: destinos
+        source: destinos,
+        minLength: 3
+    });
+    
+
+    swapTrip.click(function(){
+        var salida = document.getElementById("inputOrigen");
+        var llegada = document.getElementById("inputDestino");
+
+        var aux = salida.value;
+        salida.value = llegada.value;
+        llegada.value = aux;
     });
 
     let fecha = new Date();
@@ -75,17 +87,20 @@
     let divCantidad = $("#cantPax");
 
     cantidad = 0
+    divCantidad.val(cantidad);
     divCantidad.html(cantidad + "");
     sumar.click(function(){
         if(cantidad < 5)
             cantidad++;
 
+        divCantidad.val(cantidad);
         divCantidad.html(cantidad + "");
     });
     restar.click(function(){
         if(cantidad > 0)
             cantidad--;
 
+        divCantidad.val(cantidad);
         divCantidad.html(cantidad + "");
     });
 
