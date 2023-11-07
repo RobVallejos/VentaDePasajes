@@ -115,30 +115,38 @@ let bienvenido = $("#bienvenido");
 let excursiones = $("#excursiones");
 let promociones = $("#promociones");
 let asistencia = $("#asistencia");
+let btnBuscarViajes = $("#btnBuscarViajes");
+let footer = $("#footer");
 
 spanish.click(function(){
     acceder.html("Acceder");
-    tituloPagina.html("Transporte Automotor General Sarmiento");
+    tituloPagina.html("Transporte Automotor <b>General Sarmiento<b>");
     bienvenido.html("Bienvenido");
     excursiones.html("Excursiones");
     promociones.html("Promociones");
     asistencia.html("Asistencia al viajero");
+    btnBuscarViajes.html("Buscar");
+    footer.html("© 2023 Todos los derechos reservados");
 });
    
 english.click(function(){
     acceder.html("Login")
-    tituloPagina.html("General Sarmiento Automotive Transport");
+    tituloPagina.html("Automotive Transport <b>General Sarmiento<b>");
     bienvenido.html("Welcome");
     excursiones.html("Excursions");
     promociones.html("Offers");
     asistencia.html("Traveler assistance");
+    btnBuscarViajes.html("Search");
+    footer.html("© 2023 Copyright");
 });
 
 portuguese.click(function(){
     acceder.html("Accesar")
-    tituloPagina.html("General Sarmiento Transporte Automotivo");
+    tituloPagina.html("Transporte Automotivo <b>General Sarmiento<b>");
     bienvenido.html("Seja bem-vindo");
     excursiones.html("Excursões");
     promociones.html("Promoções");
     asistencia.html("Assistência ao viajante");
+    btnBuscarViajes.html("Procurar");
+    footer.html(" © 2023 Todos os direitos reservados");
 });
