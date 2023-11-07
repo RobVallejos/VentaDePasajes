@@ -52,24 +52,25 @@
 
 
     <div class="container" style="margin-top:30px;margin-bottom:30px; width: 50%;">
-        <div class="card">
-            <div class="card-header bg-primary" style="color: aliceblue;">Iniciar Sesion</div>
-            <div class="card-body">
+        <div class="card" style="color: rgb(255, 255, 255);">
+            <div class="card-header" style="background-color: #375562;">Iniciar Sesion</div>
+            <div class="card-body" style="background-color: rgba(0, 117, 156,.85);">
                 <form action="/action_page.php">
                     <div class="form-group">
                         <label for="email">Email:</label>
                         <input type="email" class="form-control" id="email" placeholder="Direccion de correo electronico" name="email">
                     </div>
+                    <br>
                     <div class="form-group">
                       <label for="pwd">Contraseña:</label>
-                      <input type="password" class="form-control" id="pwd" placeholder="contraseña" name="pswd">
+                      <input type="password" class="form-control" id="pwd" placeholder="Contraseña" name="pswd">
                     </div>
                     <br>
-                    <button type="button" class="btn btn-success">Ingresar</button>
+                    <button type="button" class="btn" style="background-color: rgb(6, 51, 114); color:rgb(255, 255, 255);" id="btnIngresar">Ingresar</button>
                   </form>
             </div>
-            <div class="card-footer bg-dark" style="color: aliceblue; text-align: right;">
-                <p>No tenes cuenta? <a href="signup.html">Registrarse</a></p>
+            <div class="card-footer" style="text-align: right; background-color: #375562;">
+                <p>No tenes cuenta? <a href="signup.html" style="color: #eee;">Registrarse</a></p>
             </div>
         </div>
     </div>
@@ -124,5 +125,6 @@
 	<!-- Archivos propios -->
 	<script type="text/javascript" src="js/buscador.js"></script>
     <script type="text/javascript" src="js/resultados.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
   </body>
 </html>

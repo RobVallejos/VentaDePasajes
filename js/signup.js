@@ -1,7 +1,6 @@
 $(function(){
     let cuit = $("#cuitForm");
     let companieName = $("#comNameForm");
-    let chkcompania = $("chkCompRep");
 
     $("input[type='checkbox']").click(function(){
         var chkValue = $("input[name='compRep']:checked").val();
@@ -17,5 +16,10 @@ $(function(){
             companieName.css("display", "none");
         }
     });
+
+    document.getElementById("btnIngresar").onclick = function irAlIndex(){
+        location.href = "index.html";
+        return;
+    } 
 
 });
