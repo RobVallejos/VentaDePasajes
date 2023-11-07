@@ -122,14 +122,14 @@ const viajes = [
                 "servicio": [
                     {
                         "tipo": "Ejecutivo", 
-                        "asientos": 9,
+                        "asientos": 7,
                         "tipoAsiento": "cama",
                         "precio": 12500,
                         "premium": true
                     },
                     {
                         "tipo": "Comun",
-                        "asientos": 40,
+                        "asientos": 33,
                         "tipoAsiento": "Semicama",
                         "precio": 8500,
                         "premium": false
