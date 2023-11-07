@@ -184,7 +184,7 @@ li {
     text-align: left;
 }
 li.trip-card{
-    width: 940px;
+    width: 940px !important;
 }
 .rowR:not(.expanded) .rowR {
     max-width: none;
